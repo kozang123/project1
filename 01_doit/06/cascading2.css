@@ -1,0 +1,13 @@
+h1 {
+    font-size: 2em;
+    background: beige;
+    color: brown;
+}
+
+h2 {
+    font-weight: 100;
+    background-color: aliceblue;
+    color: brown;
+    border: 2px solid black;
+    font-size: 30px;
+}

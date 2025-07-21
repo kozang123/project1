@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden</title>
+    <style>
+        .box {
+            margin: 10px;
+        }
+
+        .hdd {
+            
+            color: red;
+            display: none;
+        }
+        .box.box:nth-child(1):hover {
+            cursor: pointer;
+        }
+
+
+         /* +는 다음에 오는 요소, >는 하위 요소, ~는 다음에 오는 모든 요소 */
+         /* .box:nth-child(1):hover~.box>p>.hdd{ */
+         /* .box:nth-child(1):hover~.box .hdd{ */
+         /* .box:nth-child(1):hover+.box .hdd{ */
+        .box:nth-child(1):hover+.box>p>.hdd{
+            display: inline;
+            opacity: 1; /* 불투명도 */
+        }
+        .hdd2 {
+            color: rgba(255,0,0,0.0);
+            visibility: hidden; /* 드래그해서 선택해도 숨기기 */
+        }
+        /* 띄어쓰기는 모든 하위 요소 지정, >는 직계 하위 요소 지정*/
+        .box:nth-child(1):hover~.box .hdd2 {
+            color: rgba(255,0,0,0.1);
+            visibility: visible;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p><strong>이름 :</strong>홍길동</p>
+        <p><strong>연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+    <div class="box">
+        <p><strong class="hdd">이름 :</strong>홍길동</p>
+        <p><strong class="hdd">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+    <div class="box">
+        <p><strong class="hdd2">이름 :</strong>홍길동</p>
+        <p><strong class="hdd2">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+</body>
+
+</html>

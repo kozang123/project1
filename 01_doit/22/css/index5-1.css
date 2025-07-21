@@ -1,0 +1,35 @@
+/* .wrap{
+    padding: 0 2vw;
+} */
+
+.inner{
+    padding: 0 2vw;
+}
+
+header{
+    position: absolute;
+    background: var(--gn10);
+    height: 100px;
+    left: 0;
+    right: 0;
+}
+main{
+    position: relative;
+    background: var(--gn40);
+    top: 100px;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background: var(--gn30);
+}
+.sec2{
+    width: 100%;
+    height: 100vh;
+    background: var(--gn90);
+}
+.sec3{
+    width: 100%;
+    height: 100vh;
+    background: var(--gn30);
+}

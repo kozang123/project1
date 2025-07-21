@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-align</title>
+  <style>
+    p {
+      margin: 10px 110px;
+      padding: 10px;
+      border: 1px solid crimson;
+    }
+
+    .text1 {
+      text-align: left;
+      text-align: center;
+    }
+
+    .text2 {
+      text-align: right;
+    }
+
+    .text3 {text-align: justify;}
+  </style>
+</head>
+
+<body>
+  <!-- 태그는 화면에 표시되는 영역에 따라 인라인(span등)과 블럭(div등)으로 나뉜다 -->
+
+  <!-- 인라인 요소의 예시: <a>, <span>, <img>, <br>, <label>, 컨텐츠 등 
+    블럭 요소의 예시: <ul>, <li>, <ol>, <div>, <h1~6>, <body>, <p> 등-->
+
+  <!-- 인라인 요소는 너비, 높이 x, 한 줄에 출력되며 상하 배치 작업을 할 수 없음.
+    블럭 요소는 너비, 높이가 존재, 줄 바꿈이 일어나며, 상하 배치 작업 가능 -->
+
+  <!-- 블록 요소는 인라인 요소를 자식으로 포함 가능 -->
+
+  <!-- text-align
+   블럭 태그인 부모 요소에 속성을 적용하면 인라인 태그인 자식 요소에 반영됨 -->
+  <span class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis eaque deserunt vitae
+    unde assumenda doloribus provident. Architecto aliquid natus iste, excepturi nostrum doloremque sed, possimus
+    ratione laudantium dolorem similique?</span>
+  <!--  p.text$*3, $기호를 사용하면 일련번호를 넣어준다 -->
+  <p class="text1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint distinctio, aperiam aut deserunt minus nostrum ad
+    asperiores vero incidunt illo amet voluptatum ipsa itaque possimus, consequuntur expedita similique vel! In.
+  </p>
+  <p class="text2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in doloremque repellat dolorum excepturi expedita
+    vero eaque velit amet nisi quisquam, debitis quaerat consequuntur perferendis illo! Quod nesciunt fuga maxime.
+  </p>
+  <p class="text3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro deleniti consequuntur sit, exercitationem
+    officiis corrupti quod molestias dolorum, esse voluptatum. Labore mollitia repellat quod quidem, animi assumenda
+    numquam reiciendis.
+  </p>
+</body>
+
+</html>

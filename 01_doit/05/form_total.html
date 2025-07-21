@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이 세상의 모든 폼</title>
+</head>
+
+<body>
+    <h1>라디오와 체크박스</h1>
+    <!-- fieldset>legend+p>b -->
+    <form action="f.php">
+        <fieldset>
+            <legend>주문할 상품 선택</legend>
+            <p><b>주문할 상품을 선택하세요</b></p>
+            <!-- ul>li>label>input -->
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" value="s_3" name="pro" checked>
+                        선물용 3kg
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" value="s_5" name="pro">
+                        선물용 5kg
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" value="s_3" name="pro">
+                        가정용 3kg
+                    </label>
+                </li>
+                <li>
+                    <!-- label이 없으면 글씨를 눌러도 체크되지 않음 -->
+                    <input type="checkbox" value="s_5" name="pro">
+                    가정용 5kg
+                </li>
+            </ul>
+            <p><b>포장선택</b></p>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="gift" value="yes" checked>선물포장
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="gift" value="no">선물포장 안 함
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

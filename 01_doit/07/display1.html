@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display1</title>
+    <style>
+        /* a를 바꾸고 싶다면 자식요소가 아니라 부모요소인 li에게 입력 */
+        li {
+            list-style: none;
+            display: inline-block; /* 나란히 배열 */
+            display: block;
+            width: 100px;
+            background: darkred;
+            text-align: center;
+            border: 2px dashed aliceblue;
+            padding: 10px;
+        }
+
+        /* 불릿 기호 삭제 */
+        /* a는 인라인 요소기 때문에 너비를 갖지 못함 */
+        a {
+            text-decoration: none; /* 밑줄 삭제하는 용도 */
+            color: white;
+        }
+
+        /* block 요소는 브라우저 너비를 차지, inline은 컨텐츠(글자)너비 만큼만 차지 */
+        .block {
+            border: 1px solid;
+            width: 200px;
+            margin: 50px;
+        }
+
+        .inline {
+            border: 1px solid;
+        } /* inline요소는 margin으로 여백을 가질 수 없음 */
+    </style>
+</head>
+
+<body>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block"></div>
+    <span class="inline"></span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+
+    <ul class="gnb">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>label 태그 사용하기</title>
+</head>
+
+<body>
+  <form>
+    <!-- Do it! label 태그 안에 input 태그 넣기 -->
+    <!-- 폼요소에 레이블(이름표)를 붙여요 -->
+    <!-- 용법1: for 속성 없이 쓸 때 label>input -->
+    <label>아이디 <input type="text"></label>
+    <!-- 용법2: for 속성과 함꼐 쓸때 label+input => for와 id값 일치 필수-->
+    <label for="uId">사용자명</label>
+    <input id="uId" type="text">
+    <label for="uPw">비밀번호</label>
+    <input id="uPw" type="text">
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 100%;
+            border: 4px solid;
+        }
+
+        .frame {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            /* 비디오의 국제 비율은 16:9 */
+            padding-bottom: 56.25%;
+            /* width 50% */
+            /* full-size */
+            ;
+        }
+
+        .frame video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+        
+    </style>
+    <style>
+        /* parallax scroll */
+        section {
+            height: 100vh;
+            background: url(https://placedog.net/500);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+    <div class="frame"><video src="../images/main_video.mp4" controls autoplay muted></video></div>
+    <section>
+        <h2>he</h2>
+    </section>
+    <section>
+        <h2>he</h2>
+    </section>
+</body>
+
+</html>

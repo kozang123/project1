@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inherit</title>
+    <style>
+        /* serif는 장식, sans-serif는 장식이 없는 글꼴.
+        특정 글씨체를 지정하는 것이 아닌 글씨체의 유형을 지정 */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            border: 3px solid;
+            color: aquamarine;
+        }
+
+        span {
+            color: blue;
+            color: inherit;
+            border: inherit;
+            /* 부모 요소 속성 상속 */
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            border: 1px solid;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>title</h1>
+    <!-- 생성 명령어 p.box -->
+    <p class="box">
+        Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Inventore ut <span>laborum
+            mollitia</span>. Corporis, <span>fugit error, cumque iure quisquam</span>, quasi aliquid quia necessitatibus
+        ea temporibus <span>libero velit exercitationem quae labore at!</span>
+
+    </p>
+</body>
+
+</html>

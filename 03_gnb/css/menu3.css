@@ -1,0 +1,209 @@
+@charset "utf-8"
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'SUIT', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =================================== */
+/* header */
+/* =================================== */
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 94px;
+    background-color: #fff;
+    position: relative;
+}
+
+.gnb {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.gnb li {
+    margin: 0 38px;
+}
+
+.gnb li>a {
+    display: block;
+    line-height: 94px;
+    text-align: center;
+    font-size: max(2vw, 16px);
+}
+
+/* 레이아웃 */
+.gnb,
+.dep2 {
+    display: flex;
+}
+
+.w100 {
+    position: absolute;
+    background: #fbfbfb;
+    left: 0;
+    right: 0;
+    top: 94px;
+    box-shadow: 0 2px 2px rgb(0 0 0/7%);
+    overflow: hidden;
+    height: 0;
+    padding: 0 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.w100::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    right: calc(50% + 30rem);
+    top: 0;
+}
+
+.dep2 {
+    position: relative;
+    z-index: 555;
+}
+
+.dep1:hover .w100 {
+    height: auto;
+    padding: 20px 0;
+}
+
+/* =================================== */
+/* main */
+/* =================================== */
+.main_banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://img.freepik.com/free-photo/big-ben-westminster-bridge-sunset-london-uk_268835-1395.jpg?t=st=1752126348~exp=1752129948~hmac=a2891a9a0723c69d37a7c51fd8caad71e88af8cf2c5a655dcb8dbc35ecaeef5c&w=1380) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_banner::after {
+    position: absolute;
+    content: '';
+    background: url(../images/lightning_shape.png) no-repeat;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    animation: hue 3s 3s ease infinite alternate;
+}
+
+.main_banner::before {
+    position: absolute;
+    content: '';
+    background: url(../images/circular_fluid_shape.png) no-repeat;
+    right: -10%;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    animation: hue 3s ease infinite
+}
+
+@keyframes hue {
+    0% {
+        filter: hue-rotate(40deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(180deg);
+        transform: rotate(360deg);
+        ;
+    }
+}
+
+.obj1 {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 400px;
+    border-radius: 100px;
+    background: ivory;
+    left: 20%;
+    top: 20%;
+    animation: hue 5s infinite;
+}
+
+.obj1::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 400px;
+    border-radius: 100px;
+    background: ivory;
+    left: 0%;
+    top: 0%;
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+}
+
+.banner1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+    margin-top: 300px;
+    gap: 10px;
+}
+
+.banner1 li {
+    /* 부모가 flex, grid면 z-index 사용가능 */
+    z-index: 5555;
+    background: white;
+    font-size: 4em;
+    text-align: center;
+    line-height: 300px;
+    position: relative;
+}
+
+.banner1 li:after {
+    content: '';
+    /* width: 100%;
+    height: 2px; */
+    width: 10px;
+    height: 0%;
+    background-image: linear-gradient(45deg, red, yellow);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+    transition: all 0.5s;
+    mix-blend-mode: difference;
+}
+
+.banner1 li:hover:after {
+    width: 3px;
+    height: 100%;
+}

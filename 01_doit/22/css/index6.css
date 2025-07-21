@@ -1,0 +1,48 @@
+body {
+    background: var(--gn10);
+    margin: 0;
+    padding: 0;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0,0,0, .5);
+    /* 부모요소의 높이를 상속 */
+    height: inherit;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 250px;
+    height: 100vh;
+    background: var(--gn20);
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main {
+    flex: 1;
+    height: 100vh;
+    background: var(--gn30);
+    order: 1;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: var(--gn30);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

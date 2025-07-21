@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: auto;
+flex-direction: row;
+height: 500px;
+}
+#opt1{
+    /* 주축 기준 시작점 배치 */
+    justify-content: flex-start;
+}
+#opt2{
+    /* 주축 기준 끝점 배치 */
+    justify-content: flex-end;
+}
+#opt3{
+    /* 주축 기준 중앙 배치 */
+    justify-content: center;
+}
+#opt4{
+    /* 시작점과 끝점 배치후 중간은 같은 간격배치 */
+    justify-content: space-between;
+}
+#opt5{
+    /* 중첩영역 더하기 */
+    justify-content: space-around;
+    /* 중첩영역 무시(병합) */
+    justify-content: space-evenly;
+
+}

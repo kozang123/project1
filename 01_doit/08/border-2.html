@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font: 0.95em "맑은 고딕", sans-serif;
+			margin: 40px;
+		}
+
+		div {
+		border:10px red solid;
+		padding: 40px;
+		outline-width: 10px;
+		outline-style: solid;
+		outline-color: #333333;
+		outline-offset: 15px;
+		}
+
+		p {
+			width: 330px;
+			margin: auto;
+			line-height: 200%;
+			padding: 10px;
+			height: auto;
+		}
+
+		.box1{
+			border: 20px solid #ffcc66;
+			outline: dashed 1px #000;
+			margin-bottom: 10px;
+			border-radius: 50px;
+			box-shadow: 1px 3px 10px red;
+		}
+		
+		.box2 {
+			border: 10px double #ffcc00;
+			outline: double 10px rgb(10, 33, 10);
+			filter: drop-shadow(1px 1px 10px #000);
+			filter: blur(0.1px);
+		}
+	</style>
+</head>
+
+<body>
+	<!-- div>p.box$*2로 작성함 -->
+	<div>
+		<p class="box1">Lorem ipsum dolor sit amet, eum ad iuvaret atomorum, est id postea numquam. Ut his utinam
+			molestiae appellantur, ad ignota vituperata vix. Et eum tota inani, mel ne nihil commune suavitate.
+			Maluisset scripserit has in. Nam erat civibus definiebas eu, eos cu tollit fastidii dignissim, an per error
+			mandamus. Epicuri mediocrem ei eum, et quo quodsi iriure.</p>
+		<p class="box2">모든 국민은 고문을 받지 아니하며. 가부동수인 때에는 부결된 것으로 본다. 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를
+			둘 수 있다. 모든 국민은 거주·이전의 자유를 가진다.</p>
+	</div>
+</body>
+
+</html>

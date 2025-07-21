@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    // 사용자로부터 신장과 몸무게를 입력받습니다.
+    // prompt()는 문자열을 반환하므로 parseFloat()으로 숫자로 변환합니다.
+    let height = parseFloat(prompt('신장을 입력하세요 (예: 170)'));
+    let weight = parseFloat(prompt('몸무게를 입력하세요 (예: 65)'));
+
+    // 입력 값이 유효한 숫자인지 확인합니다.
+    // 사용자가 '취소'를 누르거나 숫자가 아닌 값을 입력했을 경우 NaN이 됩니다.
+    if (isNaN(height) || isNaN(weight)) {
+        alert('올바른 신장과 몸무게를 숫자로 입력해주세요.');
+    } else {
+        // 적정 몸무게를 계산합니다.
+        let bmi = (height - 100) * 0.9;
+
+        // 실제 몸무게와 적정 몸무게를 비교하여 결과를 출력합니다.
+        if (weight > bmi) {
+            alert(`당신의 적정 몸무게는 ${bmi.toFixed(1)}kg 입니다. 적정 몸무게 이상입니다.`);
+        } else if (weight < bmi) {
+            alert(`당신의 적정 몸무게는 ${bmi.toFixed(1)}kg 입니다. 적정 몸무게 미달입니다.`);
+        } else {
+            // 실제 몸무게가 적정 몸무게와 정확히 일치하는 경우
+            alert(`당신의 적정 몸무게는 ${bmi.toFixed(1)}kg 입니다. 적정 몸무게와 일치합니다.`);
+        }
+    }
+</script>
+</body>
+
+</html>

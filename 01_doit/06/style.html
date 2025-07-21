@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트를 html에 적용하는 3가지 방법</title>
+    <!-- 1번 방법(internal; 내부스타일시트): head 요소에 style을 써서 삽입 -->
+
+    <style>
+        /* css문서자리라서 단축키와 적용방식 등이 달라요 */
+        /* 선택자에 {속성1:값1; 속성2:값2;} 와 같은 방식으로 여러 값을 넣을 수 있어요 */
+        body {
+            background: rgba(19, 21, 141, 0.692);
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+    <!-- 3번 방법(link; 외부스타일시트): link 태그로 연결, 웹 표준 -->
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <h1>Title1</h1>
+    <!-- 방법2(inline; 인라인): 아래와 같이 태그에 직접 'style=ㅁㅁㅁ'을 입력해 작성 -->
+    <h2 style="color: aliceblue;">Title2</h2>
+    <h3>Title3</h3>
+    <p style="background-color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate officiis
+        eos alias illo quos perferendis cupiditate velit, voluptates sunt itaque repudiandae vel blanditiis corporis
+        nemo cumque at! Porro, quod quidem.</p>
+</body>
+
+</html>

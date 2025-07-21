@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+main {
+  background-color: #777;
+}
+footer {
+  background-color: #555;
+}
+
+
+section {
+  background: #eee;
+  color: #333;
+}
+
+
+/* custom */
+.c-w {
+  color: #fff;
+}
+.wrap {
+    margin: 0 auto;
+    width: 250px;
+}
+.f-l {
+    float: left;
+}
+
+.f-r{
+    float: right;
+}
+
+.c-f:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.bb {
+    background: #333;
+}
+
+
+ul li {
+    background-color: yellow;}
+ul li a{
+    background-color: aqua;}

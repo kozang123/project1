@@ -1,0 +1,17 @@
+.box{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: pink;
+    animation: move 2s infinite alternate;
+    animation-play-state: running;
+}
+.box:hover{
+    animation-play-state: paused;
+}
+@keyframes move {
+    to{
+        transform: translateX(500px);
+    }
+}

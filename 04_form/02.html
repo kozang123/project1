@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search_wrap{
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+        }
+        input.search{
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.815);
+            border: none;
+            font-size: 16px;
+            color: gray;
+            padding-left: 45px;
+            border-radius: 50px;
+            transition: background 0.2s;
+        }
+        .search::-webkit-input-placeholder{
+            color: aliceblue;
+        }
+        .search::-moz-placeholder{
+            color: aliceblue;
+        }
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-left: 11px;
+            margin-top: 7px;
+        }
+        .search:hover,
+        .search:focus,
+        .search:active{
+            background: white;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <form action="#" method="get">
+            <div class="search_wrap">
+                <span class="icon"><img src="search.svg" alt="search"></span>
+                <input type="search" placeholder="search..." class="search">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

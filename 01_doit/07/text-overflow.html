@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow</title>
+    <style>
+        ul,
+        li,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            color: darkblue;
+        }
+        h3{
+            /* 말줄임표는 블럭요소에 적용됨.
+            width: px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            와 같이 말줄임표는 너비 제한, 너비를 넘어가는 컨텐츠, 넘어간 컨텐츠에 대한 숨김 지정, 줄바꿈 지정의 형식이 필요하다.*/
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .multi {
+            width: 200px;
+            border: 1px solid;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5; /* 행의 갯수 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <ul class="notice">
+       <li><a href="#">
+            <h3>시간 배분을 위하여 현명한 판단을 바랍니다. </h3></a></li>
+       <li><a href="#">
+            <h3>욕심껏 내용을 채우는 것도 좋겠습니다. </h3></a></li>
+       <li><a href="#">
+            <h3>결과물을 볼 수 있어야 하는 것이 우선입니다.</h3></a></li>
+   </ul>
+   <div class="multi">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet ipsa aliquam fugit voluptates rerum alias pariatur? Aliquid architecto inventore nisi, consequatur maiores, deserunt soluta, unde accusamus incidunt laborum voluptatum.
+   </div>
+</body>
+</html>

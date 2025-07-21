@@ -1,0 +1,13 @@
+.container{
+    width: 450px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+#box1{
+    align-self: flex-start;
+}
+#box3{
+    align-self: stretch;
+}
+/* 인스펙터로 필요한 걸 찾아서 쓰기 */

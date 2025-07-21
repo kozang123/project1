@@ -1,0 +1,291 @@
+/* main visual background */
+body.mainBody.s1 {
+  background: linear-gradient(180deg, #31c1bb 0%, #87dc96 100%);
+  min-height: 100vh;
+  font-family: 'Noto Sans KR', 'Pretendard', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* header */
+.mainHeader {
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+.topMenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 40px 0 40px;
+  background: none;
+}
+.mainHeaderHam, .mainHeaderInfo, .mainHeaderLang, .mainHeaderEng {
+  background: none;
+  border: none;
+  margin: 0 8px;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+}
+.infoText {
+  color: #fff;
+  margin-left: 16px;
+  font-size: 1.1em;
+}
+
+.mainMenu {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 16px 0;
+}
+.mainMenu ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mainMenu li {
+  font-size: 1.2em;
+}
+.mainMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+.mainMenu li.on a, .mainMenu a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.top_btn {
+  position: absolute;
+  right: 40px;
+  top: 24px;
+  color: #fff;
+  background: rgba(49,193,187,0.8);
+  border-radius: 20px;
+  padding: 6px 18px 6px 10px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+.top_btn svg {
+  margin-right: 4px;
+}
+
+/* main util bar */
+.mainUtil {
+  position: fixed;
+  top: 120px;
+  right: 40px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mainUtilBtn {
+  background: #fff;
+  border: 2px solid #31c1bb;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(49,193,187,0.15);
+  transition: box-shadow 0.2s;
+}
+.mainUtilBtn:hover {
+  box-shadow: 0 4px 16px rgba(49,193,187,0.25);
+}
+.mainUtilMenu {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(49,193,187,0.10);
+  padding: 16px 0;
+  margin: 0;
+  list-style: none;
+  min-width: 180px;
+}
+.mainUtilMenu li {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  transition: background 0.2s;
+}
+.mainUtilMenu li:hover {
+  background: #f0faf9;
+}
+.mainUtilMenu svg {
+  margin-right: 10px;
+  color: #31c1bb;
+}
+.mainUtilMenu p {
+  margin: 0;
+  font-size: 1em;
+  color: #222;
+}
+
+/* main body in */
+.mainBodyIn {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+.mainLogo {
+  display: block;
+  margin: 40px auto 24px auto;
+  text-align: center;
+}
+.mainLogo img {
+  height: 60px;
+}
+
+/* all menu */
+.allMenu {
+  display: none; /* show with JS */
+}
+
+/* calendar */
+.mainCalendaWrap {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainCalenda {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(49,193,187,0.15);
+  padding: 32px 40px;
+  min-width: 400px;
+}
+.calendaTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.calendaDay {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.calendaDay.check, .calendaDay:hover {
+  background: #31c1bb;
+  color: #fff;
+}
+.calendaBottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+.calendaNo, .calendaSelect {
+  background: #31c1bb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.calendaNo:hover, .calendaSelect:hover {
+  background: #229a8e;
+}
+
+/* section backgrounds and illustration area */
+#fullpage {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.mainHome {
+  min-height: 800px;
+  position: relative;
+  background: none;
+}
+.mainHomeBg.type1 {
+  position: absolute;
+  left: 0; top: 0; right: 0; height: 400px;
+  background: #31c1bb;
+  z-index: 1;
+}
+.mainHomeBg.type2 {
+  position: absolute;
+  left: 0; right: 0; top: 400px; height: 400px;
+  background: #87dc96;
+  z-index: 1;
+}
+.homeSlideIn {
+  position: relative;
+  z-index: 2;
+}
+
+/* illustration and park style */
+.section {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 80px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mainBodyIn, .mainMenu, .topMenu {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mainLogo img {
+    height: 40px;
+  }
+  .mainUtil {
+    right: 10px;
+    top: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .mainBodyIn, .mainMenu, .topMenu {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .mainLogo img {
+    height: 32px;
+  }
+  .mainUtil {
+    right: 2px;
+    top: 60px;
+  }
+  .mainCalenda {
+    min-width: 90vw;
+    padding: 16px 4vw;
+  }
+}

@@ -1,0 +1,115 @@
+/* Banner Section (node-id=133-1200) - Figma 스타일 반영 */
+.banner-section {
+  position: relative;
+  width: 1440px;
+  height: 300px;
+  background: #374140;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  left: 165px;
+  top: -306px;
+  width: 1129px;
+  height: 754px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url('http://localhost:3845/assets/ae99ff5c761ae282346bc9d9dc0e6216501ee88d.png') center/cover no-repeat;
+  filter: blur(6.5px);
+  z-index: 1;
+}
+
+.feature-box {
+  position: absolute;
+  top: 0;
+  width: 370px;
+  height: 300px;
+  overflow: hidden;
+  z-index: 2;
+}
+.box1 { left: 164px; }
+.box2 { left: 534px; }
+.box3 { left: 905px; }
+
+.feature-border {
+  position: absolute;
+  left: 0; top: 0;
+  width: 300px;
+  height: 300px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+.feature-border img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-icon-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.feature-icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+.feature-icon.figma .ellipse {
+  position: absolute;
+  left: 0; top: 0;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+}
+.feature-icon.figma .figma-group {
+  position: absolute;
+  left: 13px; top: 7px;
+  width: 38px;
+  height: 50px;
+  z-index: 2;
+}
+.feature-icon.webdesign .icon-bg,
+.feature-icon.uxui .icon-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+}
+.feature-icon.webdesign .icon-fg {
+  position: absolute;
+  left: 13px; top: 13px;
+  width: 38px;
+  height: 38px;
+  z-index: 2;
+}
+.feature-icon.uxui .icon-fg {
+  position: absolute;
+  left: 13px; top: 13px;
+  width: 38px;
+  height: 38px;
+  z-index: 2;
+}
+
+.feature-title {
+  color: #fff;
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+.banner-image-blur {
+  display: none;
+}

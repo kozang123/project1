@@ -1,0 +1,17 @@
+body {
+  padding: 10px;
+}
+
+.wrap {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(180deg, #1a8bee 0%, #5fc5f1 50%, #10f5cf 100%);
+  transition: all 1s;
+  animation: gradient 2s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    100%{
+    background: linear-gradient(0deg, #1A8BEE 0%, #5FC5F1 50%, #10F5CF 100%);
+}
+}

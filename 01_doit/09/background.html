@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>배경 이미지</title>
+  <style>
+    body {
+      background-color: #000000;
+      background-color: rgb(36, 161, 165);
+      background-color: greenyellow;
+      background-image: url('images/bg1.jpg');
+      background-repeat: repeat-x;
+      background-repeat: repeat-y;
+      background-repeat: no-repeat;
+      /* body에 높이가 없으면 center로도 수평수직 되지 않음 */
+      
+      background-position: center;
+      background-position: center top; /* x y */
+      background-position: left top; /* x y */
+      background-position: 10px 500px; /* x y */
+      /* background는 color, image, position를 모두 포함, 순서는 상관 없음*/
+      background: #fcfcfc url(images/bg1.jpg) no-repeat 50px 50px;
+    }
+    body{
+      background: url('images/bg5.jpg') left top no-repeat fixed;
+      background-size: cover;
+    }
+  
+    h1 {
+      margin-top:150px;   /* 상단 마진 */
+      font-size:80px;  /* 글자 크기 */
+      text-align: center;      /* 가운데 정렬 */
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Do it!</h1>
+ </body>
+</html>
